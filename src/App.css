@@ -1,0 +1,21 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
