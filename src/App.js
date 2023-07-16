@@ -6,6 +6,7 @@ import ContactUs from './pages/ContactUs/ContactUs'
 import Products from './pages/Products/Products'
 import Services from './pages/Services/Services'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import './App.css'
 
 const App = () => {
   return (

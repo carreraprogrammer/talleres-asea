@@ -1,0 +1,54 @@
+/* Mobile first */
+
+.navContainer {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.burgerMenu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid red;
+  flex-direction: column;
+  justify-content: center;
+  background-color: blue;
+}
+
+.not-show {
+  display: none;
+}
+  
+.show {
+  display: flex;
+}
+
+.logo {
+  z-index: 10001;
+}
+
+.closeBtn {
+  z-index: 10001;
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  cursor: pointer;
+}
+  
