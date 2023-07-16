@@ -18,6 +18,10 @@
   a {
     text-decoration: none;
   }
+
+  ul {
+    list-style: none;
+  }
   
   .pc {
     display: none;
