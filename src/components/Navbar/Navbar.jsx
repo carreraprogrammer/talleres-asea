@@ -7,7 +7,7 @@ import { LuInstagram } from 'react-icons/lu';
 import { LuFacebook } from 'react-icons/lu';
 import { LuLinkedin } from 'react-icons/lu';
 import { LuYoutube } from 'react-icons/lu';
-import logo from '../../assets/ASEA_logo.png';
+
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -111,10 +111,10 @@ const Navbar = () => {
         <div className="socialMedia">
           <hr className='divider' />
           <div className="socialMediaIcons">
-            <a><LuYoutube style={{ color: '#fff' }} /></a>
-            <a><LuLinkedin style={{ color: '#fff' }} /></a>
-            <a><LuFacebook style={{ color: '#fff' }} /></a>
-            <a><LuInstagram style={{ color: '#fff' }} /></a>
+            <div><LuYoutube style={{ color: '#fff' }} /></div>
+            <div><LuLinkedin style={{ color: '#fff' }} /></div>
+            <div><LuFacebook style={{ color: '#fff' }} /></div>
+            <div><LuInstagram style={{ color: '#fff' }} /></div>
           </div>
         </div>
       </div>
