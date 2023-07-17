@@ -1,15 +1,24 @@
 import React from 'react'
+import './AboutAbstract.css'
 
 const AboutAbstract = () => {
   return (
     <div className="aboutAbstractContainer">
-      <h2 className="aboutAbstractTitle">Quienes Somos?</h2>
-      <p className="aboutAbstractParagraph"> Somos una empresa orgullosamente colombiana, nariñense, 
-         fundada en el año 1946; desde entonces, nos hemos enfocado y especializado en los
-         servicios de mecánica industrial, torno, fresa, soldadura y fundición de hierro
-         gris, bronce y aluminio. Actualmente nos respaldan más de 76 años de
-         experiencia como los fabricantes más reconocidos de la región del sur
-         occidente colombiano</p>
+      <div className="aboutAbstractTitleContainer">
+        <h2 className="aboutAbstractTitle">QUIENES SOMOS</h2>
+        <h3 className="aboutAbstractSubtitle">
+          Más de 70 Años de Experiencia en la Industria Metalúrgica y Mecánica
+        </h3>
+      </div>
+      <div className="aboutAbstractParagraphContainer">
+        <p className="aboutAbstractParagraph">Somos una empresa orgullosamente colombiana, nariñense,
+           fundada en el año 1946. </p> 
+        <p className="aboutAbstractParagraph"> Desde entonces, nos hemos enfocado y especializado en los servicios
+          de mecánica industrial, torno, fresa, soldadura y fundición de hierro gris, bronce y aluminio.</p> 
+        <p className="aboutAbstractParagraph">Contamos con un equipo altamente capacitado y tecnología de vanguardia
+          para ofrecer soluciones integrales a nuestros clientes. Estamos orgullosos de ser reconocidos
+          como líderes en la industria metalúrgica y mecánica en la región del suroccidente colombiano.</p>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,72 @@
+.aboutAbstractContainer {
+  height: auto;
+  width: 88%;
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.aboutAbstractTitle {
+  color: #C1844D;
+  font-family: 'Space Grotesk';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.aboutAbstractSubtitle {
+  color: #293037;
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 16px;
+}
+
+.aboutAbstractParagraph {
+  color: #B4B4B4;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+}
+
+@media (min-width: 1040px) {
+  .aboutAbstractContainer {
+    height: auto;
+    width: 70%;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+    margin: 5% 15%;
+  }
+
+  .aboutAbstractTitleContainer {
+    width: 40%;
+    margin-right: 5%;
+  }
+
+  .aboutAbstractParagraphContainer {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .aboutAbstractTitle {
+    font-size: 18px;
+  }
+
+  .aboutAbstractSubtitle {
+    font-size: 32px;
+  }
+
+  .aboutAbstractParagraph {
+    font-size: 20px;
+  }
+}

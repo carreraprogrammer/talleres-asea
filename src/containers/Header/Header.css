@@ -2,8 +2,8 @@
   border-radius: 50px;
   border: 1px solid #293037;
   height: 25vh;
-  width: 95vw;
-  margin-left: 2.5vw;
+  width: 98vw;
+  margin-left: 1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +11,7 @@
   background-image: url('../../assets/header_background.png');
   background-size: cover;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .headerTitle {
@@ -33,6 +34,12 @@
 }
 
 @media (min-width: 769px) {
+  .headerContainer {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1040px) {
   .headerContainer {
     width: 95%;
     margin-left: 2.5%;
