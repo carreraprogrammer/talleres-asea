@@ -12,7 +12,6 @@
   list-style: none;
   padding: 1rem;
   color: #FFF;
-  font-family: Space Grotesk;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -127,10 +126,12 @@
     color: black;
   }
 
-  .not-show {
-    display: block;
+  .show {
     transform: translateY(0);
-    width: 100%;
+  }
+
+  .not-show {
+    transform: translateY(0);
   }
   
   .navContainer {
