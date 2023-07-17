@@ -4,8 +4,17 @@
   display: none;
 }
 
+.logoContainer {
+  height: 60px;
+  width: 120px;
+  background-image: url('../../assets/ASEA_logo_black.png');
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
 .navContainer {
-  height: 4rem;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,10 +80,6 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.logo {
-  z-index: 10001;
-}
-
 .closeBtn {
   z-index: 10001;
   position: fixed;
@@ -127,6 +132,12 @@
     color: black;
   }
 
+
+  .logo {
+    height: 150px;
+    cursor: pointer;
+  }
+
   .show {
     transform: translateY(0);
   }
@@ -138,7 +149,7 @@
   .navContainer {
     width: 100%;
     padding: 0;
-    height: 8rem;
+    height: 10rem;
   }
 
   .navBar {
@@ -163,10 +174,30 @@
 
   .navLink > a {
     color: black;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .navLink > a:hover {
+    color: #293037;
+    text-decoration: underline;
+    transform: scale(1.05);
   }
   
 
   .socialMedia {
     display: none;
+  }
+
+  .logoContainer {
+    height: 80px;
+    width: 160px;
+    background-image: url('../../assets/ASEA_logo_black.png');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .logoContainer:hover {
+    background-image: url('../../assets/ASEA_move.png');
   }
 }

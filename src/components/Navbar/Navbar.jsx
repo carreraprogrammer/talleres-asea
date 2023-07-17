@@ -7,6 +7,7 @@ import { LuInstagram } from 'react-icons/lu';
 import { LuFacebook } from 'react-icons/lu';
 import { LuLinkedin } from 'react-icons/lu';
 import { LuYoutube } from 'react-icons/lu';
+import logo from '../../assets/ASEA_logo.png';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,8 +18,8 @@ const Navbar = () => {
 
   return (
     <div className='navContainer'>
-      <NavLink className='mobile' to="/" onClick={() => setShowMenu(false)}>
-        Logo
+      <NavLink className='mobile logo' to="/" onClick={() => setShowMenu(false)}>
+        <div className='logoContainer'></div>
       </NavLink>
       <div className={showMenu ? 'navBar show' : 'navBar not-show'}>
         <ul className="navBarLinks">
@@ -58,13 +59,13 @@ const Navbar = () => {
               to="/"
               onClick={handleMenu}
             >
-              LOGO
+              <div className='logoContainer'></div>
             </NavLink>
             <NavLink 
               className={({ isActive }) => (isActive ? 'pc currentPage' : 'pc')}
               to="/"
             >
-              LOGO
+             <div className='logoContainer'></div>
             </NavLink>
           </li>
           <li className='navLink mobile'>
