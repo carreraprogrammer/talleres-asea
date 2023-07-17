@@ -1,6 +1,5 @@
 import React from 'react'
 import './Header.css'
-import AboutAbstract from '../../components/AboutAbstract/AboutAbstract'
 
 const Header = () => {
   return (
