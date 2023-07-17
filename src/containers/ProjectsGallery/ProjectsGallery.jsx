@@ -29,10 +29,6 @@ const ProjectsGallery = () => {
   useEffect(() => {
     let interval;
 
-    const handleMouseEnter = () => {
-      clearInterval(interval);
-    };
-
     const handleMouseLeave = () => {
       const currentIndex = projectsKeys.indexOf(projectKey);
       const nextIndex = (currentIndex + 1) % projectsKeys.length;
