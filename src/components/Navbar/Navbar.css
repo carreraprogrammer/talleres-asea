@@ -48,6 +48,7 @@
   color: #ffff;
   text-decoration: none;
   flex-direction: column;
+  z-index: 10000;
 }
 
 .navBarLinks {
@@ -137,6 +138,7 @@
   .navContainer {
     width: 100%;
     padding: 0;
+    height: 8rem;
   }
 
   .navBar {

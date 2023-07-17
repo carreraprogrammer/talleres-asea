@@ -1,5 +1,5 @@
 .headerContainer {
-  border-radius: 50px;
+  border-radius: 40px;
   border: 1px solid #293037;
   height: 25vh;
   width: 98vw;
@@ -41,8 +41,8 @@
 
 @media (min-width: 1040px) {
   .headerContainer {
-    width: 95%;
-    margin-left: 2.5%;
+    width: 90%;
+    margin-left: 5%;
     height: 90vh;
     justify-content: space-between;
     align-items: center;

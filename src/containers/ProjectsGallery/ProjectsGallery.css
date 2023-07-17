@@ -1,0 +1,172 @@
+.galleryContainer {
+  height: 25vh;
+  border-radius: 40px;
+  width: 98%;
+  margin-left: 1%;
+  background-size: cover;
+  background-position: center;
+  transition: 2s all ease-in-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.galleryContainer:hover {
+  background-position: center;
+}
+
+.arrowLeftContainer {
+    position: absolute;
+    background-color: #ffffffc0;
+    border-radius: 100%;
+    font-size: 3rem;
+    bottom: 5%;
+    left: 5%;
+    cursor: pointer;  
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrowRightContainer {
+    position: absolute;
+    background-color: #ffffffc0;
+    border-radius: 100%;
+    font-size: 3rem;
+    height: 24px;
+    width: 24px;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projectInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  .projectTitle {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .projectDescription {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 12px;
+    width: 90%;
+    margin-top: 16px;
+  }
+
+  .projectSubtitle {
+    color: #C1844D;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-bottom: 8px;
+  }
+
+@media (min-width: 1040px) {
+  .galleryContainer {
+    width: 90%;
+    margin-left: 5%;
+    height: 70vh;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .arrowLeftContainer {
+    position: absolute;
+    background-color: #ffffffc0;
+    border-radius: 100%;
+    font-size: 3rem;
+    bottom: 50%;
+    left: 2%;
+    cursor: pointer;  
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrowRightContainer {
+    position: absolute;
+    background-color: #ffffffc0;
+    border-radius: 100%;
+    font-size: 3rem;
+    height: 60px;
+    width: 60px;
+    bottom: 50%;
+    right: 2%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projectInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+    margin-left: 10rem;
+    width: 50%;
+    padding-top: 10%;
+  }
+
+  .projectTitle {
+    color: #FFF;
+    font-family: Space Grotesk;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .projectDescription {
+    color: #FFF;
+    font-family: Space 'Grotesk';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+  }
+
+  .projectSubtitle {
+    color: #C1844D;
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+
+
+}
