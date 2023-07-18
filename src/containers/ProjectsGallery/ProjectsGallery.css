@@ -82,7 +82,7 @@
 .projectSubtitle {
   font-size: 12px;
   font-weight: 400;
-  line-height: normal;
+  line-height: light;
   text-decoration-line: underline;
   margin-bottom: 8px;
 }
@@ -132,7 +132,7 @@
     color: white;
     margin-left: 8rem;
     padding-left: 10px;
-    height: 50%;
+    height: auto;
     width: 40%;
     background-color: rgba(0, 0, 0, 0.35);
   }
