@@ -25,7 +25,7 @@ const ProjectsGallery = () => {
   const [projectKey, setProjectKey] = useState(projectsKeys[0]);
 
   const activeIntervalTime = 8000; // Cambiar el valor para ajustar el intervalo activo (en milisegundos)
-  const pauseTime = 2000; // Tiempo de espera antes de reanudar el cambio de imágenes (en milisegundos)
+  const pauseTime = 4000; // Tiempo de espera antes de reanudar el cambio de imágenes (en milisegundos)
   const [isGalleryPaused, setGalleryPaused] = useState(false);
 
   useEffect(() => {
