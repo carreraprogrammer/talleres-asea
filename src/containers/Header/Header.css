@@ -16,15 +16,16 @@
   transition: 0.5s all ease-in-out;
   position: relative;
   overflow: hidden;
-  transition: 1s all ease-in-out;
 }
 
 .galleryVideo {
   position: absolute;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
   z-index: 999;
   filter: brightness(0.8);
   cursor: pointer;
+  transition: 0.5s all ease-in-out;
 }
 
 .galleryVideo:hover {
