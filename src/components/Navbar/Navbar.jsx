@@ -118,7 +118,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <li className={showMenu ? 'closeBtn show' : 'closeBtn not-show'} style={{ color: '#fff' }} onClick={handleMenu}>
+      <li className={showMenu ? 'closeBtn show noScroll' : 'closeBtn not-show'} style={{ color: '#fff' }} onClick={handleMenu}>
         <CgCloseR />
       </li>
       <li className='burgerMenu mobile' style={{ color: '#293037' }} onClick={handleMenu}>
