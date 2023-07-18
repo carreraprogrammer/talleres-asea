@@ -17,6 +17,14 @@
     line-height: normal;
     text-decoration-line: underline;
   }
+
+  .checkIcon {
+    color: #C1844D;
+    width: 10%;
+    font-size: 2rem;
+    display: flex;
+    height: 20px;
+  }
   
   .servicesAbstractSubtitle {
     color: #293037;
@@ -28,7 +36,7 @@
     margin-top: 16px;
   }
   
-  .servicesAbstractParagraph {
+  .servicesAbstractListItem {
     color: #B4B4B4;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 12px;
@@ -36,6 +44,12 @@
     font-weight: 400;
     line-height: normal;
     margin-top: 16px;
+    width: 100%;
+    display: flex;
+  }
+
+  .servicesAbstractListItem > p {
+    width: 90%;
   }
   
   @media (min-width: 1040px) {
@@ -53,7 +67,7 @@
       margin-right: 5%;
     }
   
- .servicesAbstractParagraphContainer {
+ .servicesAbstractListContainer {
       width: 45%;
       margin-left: 5%;
     }
@@ -65,8 +79,15 @@
  .servicesAbstractSubtitle {
       font-size: 32px;
     }
+
+  .checkIcon {
+    height: 30px;
+  }
   
- .servicesAbstractParagraph {
+ .servicesAbstractListItem {
       font-size: 20px;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
     }
   }

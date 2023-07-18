@@ -121,12 +121,22 @@
     height: 56px;
     margin: 12px 0;
     border-radius: 16px;
+    font-size: 20px;
+  }
+  
+  .formInput::placeholder {
+    font-size: 20px;
   }
 
   .formTextArea {
     height: 191px;
     border-radius: 16px;
     margin: 12px 0;
+    font-size: 20px;
+  }
+
+  .formTextArea::placeholder {
+    font-size: 20px;
   }
 
   .formSubmitButton {
@@ -138,5 +148,10 @@
     color: #fff;
     background-color: rgba(0, 0, 0, 0.232);
   }
+
+  .formTextArea::placeholder {
+    height: 150px;
+    padding-top: 70px;
+  }  
 
 }
