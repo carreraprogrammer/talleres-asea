@@ -10,6 +10,7 @@
   position: relative;
   filter: sepia(20%);
   transition: 0.5s all ease-in-out;
+  margin-bottom: 24px;
 }
 
 .galleryContainer:hover {
@@ -61,8 +62,11 @@
   line-height: 22px;
 }
 
-.projectDescription,
 .projectSubtitle {
+  color: #C1844D;
+}
+
+.projectDescription{
   color: #FFF;
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -149,6 +153,5 @@
   .projectSubtitle {
     font-size: 18px;
     text-decoration-line: underline;
-    color: #C1844D;
   }
 }
