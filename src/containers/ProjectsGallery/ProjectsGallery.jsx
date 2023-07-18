@@ -21,11 +21,11 @@ const ProjectsGallery = () => {
       image: udenar,
     },
   };
+
   const projectsKeys = Object.keys(projectsObj);
   const [projectKey, setProjectKey] = useState(projectsKeys[0]);
 
-  const activeIntervalTime = 8000; // Cambiar el valor para ajustar el intervalo activo (en milisegundos)
-  const pauseTime = 4000; // Tiempo de espera antes de reanudar el cambio de imágenes (en milisegundos)
+  const activeIntervalTime = 4000; // Cambiar el valor para ajustar el intervalo activo (en milisegundos)
   const [isGalleryPaused, setGalleryPaused] = useState(false);
 
   useEffect(() => {
@@ -67,13 +67,6 @@ const ProjectsGallery = () => {
 
   const resumeGallery = () => {
     setGalleryPaused(false);
-    setTimeout(() => {
-      setProjectKey((prevKey) => {
-        const currentIndex = projectsKeys.indexOf(prevKey);
-        const nextIndex = (currentIndex + 1) % projectsKeys.length;
-        return projectsKeys[nextIndex];
-      });
-    }, pauseTime);
   };
 
   const project = projectsObj[projectKey];
