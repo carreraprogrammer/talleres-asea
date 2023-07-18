@@ -1,0 +1,142 @@
+.formContainer {
+  width: 95%; 
+  height: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 2.5%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-image: url('../../assets/form_background.png');
+  background-size: cover;
+}
+
+.formTitle {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 8px 0 16px 0;
+}
+
+.formSubtitle {
+  color: #C1844D;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin: 16px 0 8px 0;
+}
+
+.formSubmitButton {
+  width: 90%;
+  height: 42px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 8px 0 16px 0;
+}
+
+.inputContainer {
+  width: 90%;
+}
+
+.formInput {
+  border-radius: 8px;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 42px;
+  display: flex;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.formInput::placeholder {
+  display: flex;
+  text-align: center;
+  color: #B4B4B4;
+  font-size: 12px;
+}
+
+.formInput:focus {
+  outline: 2px solid #C1844D;
+}
+
+.formTextArea {
+  width: 100%;
+  height: 113px;
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.30);
+  border: 1px solid #FFF;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.formTextArea::placeholder {
+  text-align: center;
+  height: 90px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  color: #B4B4B4;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.formTextArea:focus {
+  outline: 2px solid #C1844D;
+}
+
+@media (min-width: 1040px) {
+  .formContainer {
+    width: 80%; 
+    margin-left: 10%;
+    border-radius: 50px;
+    background-image: url('../../assets/form_background_pc.png');
+    background-size: cover;
+  }
+
+  .formTitle {
+    font-size: 36px;
+    margin: 24px 0 25px 0;
+  }
+
+  .formSubtitle {
+    font-size: 18px;
+    margin: 90px 0 0 0;
+  }
+
+  .formInput {
+    height: 56px;
+    margin: 12px 0;
+    border-radius: 16px;
+  }
+
+  .formTextArea {
+    height: 191px;
+    border-radius: 16px;
+    margin: 12px 0;
+  }
+
+  .formSubmitButton {
+    border-radius: 16px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(5px);
+    width: 20%;
+    height: 56px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.232);
+  }
+
+}
