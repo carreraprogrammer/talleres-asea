@@ -74,7 +74,7 @@
   transform: translateY(-130%);
   transition: transform 0.5s ease-in-out;
 }
-  
+
 .show {
   transform: translateY(0);
   transition: transform 0.5s ease-in-out;
@@ -118,7 +118,7 @@
   margin: 0 auto;
 }
 
-
+/* Media Query for screens wider than 768px */
 @media (min-width: 769px) {
   .mobile {
     display: none;
@@ -131,7 +131,7 @@
   .pcLogo {
     color: black;
   }
-  
+
   .logo {
     height: 150px;
     cursor: pointer;
@@ -144,7 +144,7 @@
   .not-show {
     transform: translateY(0);
   }
-  
+
   .navContainer {
     width: 100%;
     padding: 0;
@@ -183,7 +183,6 @@
     text-decoration: underline;
     transform: scale(1.05);
   }
-  
 
   .socialMedia {
     display: none;

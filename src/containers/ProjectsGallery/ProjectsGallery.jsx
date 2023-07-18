@@ -22,46 +22,56 @@ const ProjectsGallery = () => {
   };
   const projectsKeys = Object.keys(projectsObj);
   const [projectKey, setProjectKey] = useState(projectsKeys[0]);
-  const [intervalId, setIntervalId] = useState(null);
 
   const activeIntervalTime = 4000; // Cambiar el valor para ajustar el intervalo activo (en milisegundos)
   const pauseTime = 2000; // Tiempo de espera antes de reanudar el cambio de imágenes (en milisegundos)
+  const [isGalleryPaused, setGalleryPaused] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const currentIndex = projectsKeys.indexOf(projectKey);
-      const nextIndex = (currentIndex + 1) % projectsKeys.length;
-      setProjectKey(projectsKeys[nextIndex]);
-    }, activeIntervalTime);
-
-    setIntervalId(interval);
+    let interval;
+    if (!isGalleryPaused) {
+      interval = setInterval(() => {
+        setProjectKey((prevKey) => {
+          const currentIndex = projectsKeys.indexOf(prevKey);
+          const nextIndex = (currentIndex + 1) % projectsKeys.length;
+          return projectsKeys[nextIndex];
+        });
+      }, activeIntervalTime);
+    }
 
     return () => {
-      clearInterval(intervalId);
+      clearInterval(interval);
     };
-  }, [projectKey, projectsKeys, intervalId]);
+  }, [projectsKeys, activeIntervalTime, isGalleryPaused]);
 
   const handleArrowLeftClick = () => {
-    const currentIndex = projectsKeys.indexOf(projectKey);
-    const prevIndex = (currentIndex - 1 + projectsKeys.length) % projectsKeys.length;
-    setProjectKey(projectsKeys[prevIndex]);
+    setProjectKey((prevKey) => {
+      const currentIndex = projectsKeys.indexOf(prevKey);
+      const prevIndex = (currentIndex - 1 + projectsKeys.length) % projectsKeys.length;
+      return projectsKeys[prevIndex];
+    });
   };
 
   const handleArrowRightClick = () => {
-    const currentIndex = projectsKeys.indexOf(projectKey);
-    const nextIndex = (currentIndex + 1) % projectsKeys.length;
-    setProjectKey(projectsKeys[nextIndex]);
+    setProjectKey((prevKey) => {
+      const currentIndex = projectsKeys.indexOf(prevKey);
+      const nextIndex = (currentIndex + 1) % projectsKeys.length;
+      return projectsKeys[nextIndex];
+    });
   };
 
   const pauseGallery = () => {
-    clearInterval(intervalId);
+    setGalleryPaused(true);
   };
 
   const resumeGallery = () => {
+    setGalleryPaused(false);
     setTimeout(() => {
-      const currentIndex = projectsKeys.indexOf(projectKey);
-      const nextIndex = (currentIndex + 1) % projectsKeys.length;
-      setProjectKey(projectsKeys[nextIndex]);
+      setProjectKey((prevKey) => {
+        const currentIndex = projectsKeys.indexOf(prevKey);
+        const nextIndex = (currentIndex + 1) % projectsKeys.length;
+        return projectsKeys[nextIndex];
+      });
     }, pauseTime);
   };
 
