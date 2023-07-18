@@ -25,7 +25,7 @@ const ProjectsGallery = () => {
   const projectsKeys = Object.keys(projectsObj);
   const [projectKey, setProjectKey] = useState(projectsKeys[0]);
 
-  const activeIntervalTime = 4000; // Cambiar el valor para ajustar el intervalo activo (en milisegundos)
+  const activeIntervalTime = 6000; // Cambiar el valor para ajustar el intervalo activo (en milisegundos)
   const [isGalleryPaused, setGalleryPaused] = useState(false);
 
   useEffect(() => {
