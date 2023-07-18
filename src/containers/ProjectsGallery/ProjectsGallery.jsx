@@ -9,29 +9,37 @@ const ProjectsGallery = () => {
   const projectsObj = {
     rumichacaIpiales: {
       title: 'Consorcio SH',
-      description: 'Construimos formaletas de alta calidad para cajas de iluminación y fibra óptica, viaductos para la segunda calzada Pasto-Ipiales, señalización vial y estructuras metálicas para cubiertas de bodegas.',
+      description:
+        'Construimos formaletas de alta calidad para cajas de iluminación y fibra óptica, viaductos para la segunda calzada Pasto-Ipiales, señalización vial y estructuras metálicas para cubiertas de bodegas.',
       image: rumichacaIpiales,
     },
     udenar: {
       title: 'Universidad de Nariño',
-      description: 'Construimos e instalamos aproximadamente 60.000 kilos de estructura metálica para la Universidad de Nariño en el municipio de Tumaco, Nariño.',
+      description:
+        'Construimos e instalamos aproximadamente 60.000 kilos de estructura metálica para la Universidad de Nariño en el municipio de Tumaco, Nariño.',
       image: udenar,
     },
   };
   const projectsKeys = Object.keys(projectsObj);
   const [projectKey, setProjectKey] = useState(projectsKeys[0]);
+  const [intervalId, setIntervalId] = useState(null);
+
+  const activeIntervalTime = 4000; // Cambiar el valor para ajustar el intervalo activo (en milisegundos)
+  const pauseTime = 2000; // Tiempo de espera antes de reanudar el cambio de imágenes (en milisegundos)
 
   useEffect(() => {
     const interval = setInterval(() => {
       const currentIndex = projectsKeys.indexOf(projectKey);
       const nextIndex = (currentIndex + 1) % projectsKeys.length;
       setProjectKey(projectsKeys[nextIndex]);
-    }, 4000); // Cambiar el valor de 4000 para ajustar el intervalo (en milisegundos)
+    }, activeIntervalTime);
+
+    setIntervalId(interval);
 
     return () => {
-      clearInterval(interval);
+      clearInterval(intervalId);
     };
-  }, [projectKey, projectsKeys]);
+  }, [projectKey, projectsKeys, intervalId]);
 
   const handleArrowLeftClick = () => {
     const currentIndex = projectsKeys.indexOf(projectKey);
@@ -45,10 +53,27 @@ const ProjectsGallery = () => {
     setProjectKey(projectsKeys[nextIndex]);
   };
 
+  const pauseGallery = () => {
+    clearInterval(intervalId);
+  };
+
+  const resumeGallery = () => {
+    setTimeout(() => {
+      const currentIndex = projectsKeys.indexOf(projectKey);
+      const nextIndex = (currentIndex + 1) % projectsKeys.length;
+      setProjectKey(projectsKeys[nextIndex]);
+    }, pauseTime);
+  };
+
   const project = projectsObj[projectKey];
 
   return (
-    <div className="galleryContainer" style={{ backgroundImage: `url(${project.image})` }}>
+    <div
+      className="galleryContainer"
+      style={{ backgroundImage: `url(${project.image})` }}
+      onMouseEnter={pauseGallery}
+      onMouseLeave={resumeGallery}
+    >
       <div className="gallery"></div>
       <div className="arrowLeftContainer" onClick={handleArrowLeftClick}>
         <BsArrowLeftShort className="arrowLeft" />
