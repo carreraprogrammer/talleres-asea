@@ -59,13 +59,13 @@ const Navbar = () => {
               to="/"
               onClick={handleMenu}
             >
-              <div className='logoContainer'></div>
+              <div className='logoContainer lazyload'></div>
             </NavLink>
             <NavLink 
               className={({ isActive }) => (isActive ? 'pc currentPage' : 'pc')}
               to="/"
             >
-             <div className='logoContainer'></div>
+             <div className='logoContainer lazyload'></div>
             </NavLink>
           </li>
           <li className='navLink mobile'>

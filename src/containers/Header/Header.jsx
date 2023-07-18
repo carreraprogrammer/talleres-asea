@@ -1,9 +1,10 @@
 import React from 'react';
 import './Header.css';
+import 'lazysizes'
 
 const Header = () => {
   return (
-    <div className="headerContainer">
+    <div className="headerContainer lazyload">
       <div>
         <p className='mainTitle'>SOMOS TALLERES ASEA</p>
         <h1 className="headerTitle">Más De 70 Años En La Industria.</h1>
