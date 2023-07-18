@@ -11,6 +11,7 @@
   transition: 0.5s all ease-in-out;
   margin-bottom: 24px;
   backdrop-filter: sepia(90%);
+  overflow: hidden;
 }
 
 .galleryContainer:hover {
@@ -34,6 +35,7 @@
 
 .arrowLeftContainer {
   left: 5%;
+  z-index: 1000;
 }
 
 .arrowRightContainer {
@@ -48,7 +50,8 @@
   align-items: center;
   justify-content: center;
   color: white;
-  filter: brightness(0.9)
+  filter: brightness(0.9);
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 .projectTitle {
@@ -134,7 +137,6 @@
     padding-left: 10px;
     height: auto;
     width: 40%;
-    background-color: rgba(0, 0, 0, 0.35);
   }
 
   .projectTitle {

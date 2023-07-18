@@ -20,8 +20,7 @@
 
 .galleryVideo {
   position: absolute;
-  min-width: 100%;
-  min-height: 100%;
+  height: 100%;
   z-index: 999;
   filter: brightness(0.8);
   cursor: pointer;
@@ -103,4 +102,16 @@
     width: 90%;
     margin-bottom: 5%;
   }
+
+
+.galleryVideo {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  filter: brightness(0.8);
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+
 }
