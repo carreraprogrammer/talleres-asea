@@ -131,8 +131,7 @@
   .pcLogo {
     color: black;
   }
-
-
+  
   .logo {
     height: 150px;
     cursor: pointer;
@@ -159,6 +158,8 @@
     font-size: 1rem;
     width: 100%;
     background: none;
+    overflow: visible;
+    height: 100%;
   }
 
   .navBarLinks {
@@ -169,12 +170,12 @@
     align-items: center;
     gap: 0;
     padding-left: 0;
-    color: #293037;
   }
 
   .navLink > a {
     color: black;
     transition: 0.3s all ease-in-out;
+    overflow: visible;
   }
 
   .navLink > a:hover {
