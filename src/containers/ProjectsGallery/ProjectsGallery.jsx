@@ -4,6 +4,7 @@ import rumichacaIpiales from '../../assets/carretera_rumichaca_ipiales.png';
 import udenar from '../../assets/udenar.png';
 import { BsArrowLeftShort } from 'react-icons/bs';
 import { BsArrowRightShort } from 'react-icons/bs';
+import 'lazysizes'
 
 const ProjectsGallery = () => {
   const projectsObj = {
@@ -79,7 +80,7 @@ const ProjectsGallery = () => {
 
   return (
     <div
-      className="galleryContainer"
+      className="galleryContainer lazyload"
       style={{ backgroundImage: `url(${project.image})` }}
       onMouseEnter={pauseGallery}
       onMouseLeave={resumeGallery}
