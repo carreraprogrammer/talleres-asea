@@ -14,6 +14,25 @@
   margin-bottom: 24px;
   filter: sepia(10%);
   transition: 0.5s all ease-in-out;
+  position: relative;
+  overflow: hidden;
+  transition: 1s all ease-in-out;
+}
+
+.galleryVideo {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.galleryVideo:hover {
+  filter: brightness(0.3)
+}
+
+.titlesContainer {
+  z-index: 1000;
 }
 
 .mainTitle {
@@ -44,6 +63,7 @@
   color: #fff;
   width: 90%;
   margin-bottom: 5%;
+  z-index: 1000;
 }
 
 @media (min-width: 769px) {

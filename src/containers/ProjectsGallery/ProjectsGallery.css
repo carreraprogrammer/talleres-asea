@@ -8,14 +8,12 @@
   transition: 2s all ease-in-out;
   cursor: pointer;
   position: relative;
-  filter: sepia(20%);
   transition: 0.5s all ease-in-out;
   margin-bottom: 24px;
 }
 
 .galleryContainer:hover {
   background-position: center;
-  filter: sepia(50%);
 }
 
 .arrowLeftContainer,
@@ -49,6 +47,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  filter: brightness(0.9)
 }
 
 .projectTitle {
