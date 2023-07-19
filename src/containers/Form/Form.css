@@ -105,6 +105,11 @@
     border-radius: 50px;
     background-image: url('../../assets/form_background_pc.png');
     background-size: cover;
+    transition: 0.5s all ease-in-out;
+  }
+  
+  .formContainer:hover {
+    border: 2px solid #C1844D;
   }
 
   .formTitle {
@@ -122,10 +127,12 @@
     margin: 12px 0;
     border-radius: 16px;
     font-size: 20px;
+    color: #fff;
   }
   
   .formInput::placeholder {
     font-size: 20px;
+    color: #fff;
   }
 
   .formTextArea {
@@ -133,6 +140,14 @@
     border-radius: 16px;
     margin: 12px 0;
     font-size: 20px;
+    color: #fff;
+  }
+
+  .formSubmitButton:hover {
+    transform: scale(1.1);
+    border: 2px solid #C1844D;
+    color: #C1844D;
+    background-color: #fff;
   }
 
   .formTextArea::placeholder {
@@ -147,6 +162,8 @@
     height: 56px;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.232);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
   }
 
   .formTextArea::placeholder {

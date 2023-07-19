@@ -4,7 +4,7 @@ import './Form.css';
 
 const Form = ({ subTitle, title, fields, submitButtonText, onSubmit }) => {
   return (
-    <form className="formContainer" onSubmit={onSubmit}>
+    <form className="formContainer" onSubmit={onSubmit} action='https://formspree.io/f/mrgwbqea' method="POST">
       {subTitle && <p className="formSubtitle">{subTitle}</p>}
       {title && <h2 className="formTitle">{title}</h2>}
       {fields.map((field) => (

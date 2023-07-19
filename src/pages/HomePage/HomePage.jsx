@@ -14,11 +14,6 @@ const HomePage = () => {
     { name: 'message', label: 'Mensaje', type: 'textarea' },
   ];
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí puedes manejar el envío del formulario, por ejemplo, enviando los datos al servidor.
-  };
-
   return (
   <div className='homeContainer'>
     <Header />
@@ -30,7 +25,6 @@ const HomePage = () => {
       title="Sientase Libre De contactarnos"
       fields={formFields}
       submitButtonText="ENVIA TU MENSAJE"
-      onSubmit={handleSubmit}
     />
   </div>  
   )
