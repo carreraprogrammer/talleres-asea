@@ -4,7 +4,10 @@ import Projects from '../../containers/ProjectsGallery/ProjectsGallery'
 import AboutAbstract from '../../components/AboutAbstract/AboutAbstract'
 import ServicesAbstract from '../../components/ServicesAbstract/ServicesAbstract'
 import Form from '../../containers/Form/Form'
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
+
 import './HomePage.css'
+
 
 const HomePage = () => {
   const formFields = [
@@ -26,6 +29,7 @@ const HomePage = () => {
       fields={formFields}
       submitButtonText="ENVIA TU MENSAJE"
     />
+    <ScrollToTop />
   </div>  
   )
 }

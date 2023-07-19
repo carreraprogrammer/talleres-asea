@@ -16,8 +16,7 @@ const AboutAbstract = () => {
         <p className="aboutAbstractParagraph"> Desde entonces, nos hemos enfocado y especializado en los servicios
           de mecánica industrial, torno, fresa, soldadura y fundición de hierro gris, bronce y aluminio.</p> 
         <p className="aboutAbstractParagraph">Contamos con un equipo altamente capacitado y tecnología de vanguardia
-          para ofrecer soluciones integrales a nuestros clientes. Estamos orgullosos de ser reconocidos
-          como líderes en la industria metalúrgica y mecánica en la región del suroccidente colombiano.</p>
+          para ofrecer soluciones integrales a nuestros clientes.</p>
       </div>
     </div>
   )
