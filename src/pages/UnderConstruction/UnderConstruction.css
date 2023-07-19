@@ -1,0 +1,11 @@
+.underConstructionContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.underConstructionVideo {
+  height: 50%;
+  width: 100%;
+}
