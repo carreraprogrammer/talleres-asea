@@ -1,5 +1,6 @@
 import React from 'react'
 import construction from '../../assets/under_construction.mp4'
+import './UnderConstruction.css'
 
 const UnderConstruction = () => {
   return (
