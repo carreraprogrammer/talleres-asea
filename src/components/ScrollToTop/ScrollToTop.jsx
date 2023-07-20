@@ -21,25 +21,24 @@ const ScrollToTop = () => {
     });
   };
 
-  const resetOpacity = () => {
-    if (window.scrollY < lastScrollY - 20) {
-      setIsVisible(true);
-    }
-    setLastScrollY(window.scrollY);
-  };
-
   useEffect(() => {
-    window.addEventListener('scroll', () => {
+    const resetOpacity = () => {
+      if (window.scrollY < lastScrollY - 20) {
+        setIsVisible(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    const handleScroll = () => {
       toggleVisibility();
       resetOpacity();
-    });
-    return () => {
-      window.removeEventListener('scroll', () => {
-        toggleVisibility();
-        resetOpacity();
-      });
     };
-  }, []);
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
     <div className={`scroll-to-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
