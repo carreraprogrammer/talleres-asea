@@ -1,0 +1,178 @@
+.footer {
+  height: 20%;
+}
+
+.footerPc {
+  display: none;
+}
+
+.footerFirstSection {
+  display: flex;
+  align-items: center;
+}
+
+.footerSocialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  height: 100%;
+  margin-left: 24px;
+}
+
+.footerLocationContainer,
+.footerContactContainer {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.footerLogoContainer {
+  width: 45%;
+}
+
+.footerLogo {
+  margin-left: 12px;
+  height: 100px;
+}
+
+.footerSocialIcons {
+  height: 24px;
+  width: 24px;
+  margin: 0px 12px;
+}
+
+.footerTitle {
+  color: #293037;
+  font-family: 'Space Grotesk';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+  width: 45%;
+  margin-left: 24px;
+  font-weight: bolder;
+}
+
+.footerParagraph {
+  color: #293037;
+  font-family: 'Space Grotesk';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 55%;
+  text-align: center;
+}
+
+.footerCopyWrite > div > p {
+  color: #293037;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  margin: 20px 0px;
+  width: 100%;
+  text-align: center; 
+}
+
+.footerCopyWrite > hr {
+  border: 1px solid #293037;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+@media (min-width: 760px) {
+  .footerPc {
+    display: block;
+  }
+
+  .footer {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .footerFirstSection {
+    flex-direction: column;
+    margin: 0;
+    width: 20%;
+    justify-content: flex-start;
+  }
+
+  .footerLogo {
+    margin-left: 0;
+    height: 150px;
+    margin-top: -30px;
+  }
+
+  .footerSocialContainer {
+    display: none;
+  }
+
+  .footerContainer {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+  }
+
+  .footerLocationContainer,
+  .footerContactContainer,
+  .footerServicesContainer,
+  .footerAboutContainer,
+  .footerProductsContainer {
+    flex-direction: column;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .footerTitle {
+    margin: 0;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .footerParagraph {
+    margin: 0;
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  .footerList {
+    margin-top: 40px;
+  }
+
+  .footerListItem {
+    margin-bottom: 24px;
+  }
+
+  .footerCopyWriteContainer > p {
+    margin: 0;
+    width: 50% !important;
+    font-size: 14px !important;
+    text-align: left !important;
+  }
+
+  .footerSocialContainerPc {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .footerCopyWriteContainer {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+  }
+}

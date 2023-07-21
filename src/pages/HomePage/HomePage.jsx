@@ -5,6 +5,7 @@ import AboutAbstract from '../../components/AboutAbstract/AboutAbstract'
 import ServicesAbstract from '../../components/ServicesAbstract/ServicesAbstract'
 import Form from '../../containers/Form/Form'
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop'
+import Footer from '../../components/Footer/Footer'
 
 import './HomePage.css'
 
@@ -30,6 +31,7 @@ const HomePage = () => {
       submitButtonText="ENVIA TU MENSAJE"
     />
     <ScrollToTop />
+    <Footer />
   </div>  
   )
 }
