@@ -38,19 +38,19 @@ const Footer = () => {
             </h1>
             <ul className="footerList">
               <li className="footerListItem">
-                Fabricación de maquinaria para la construcción 
+                Maquinaria Para la Construcción 
               </li>
               <li className="footerListItem">
-                Fabricación de maquinaria agrícola
+                Maquinaria Agrícola
               </li>
               <li className="footerListItem">
-                Fabricación de compuertas
+                Compuertas
               </li>
               <li className="footerListItem">
-                Fabricación de implementos sanitarios y para acueductos
+                Implementos Sanitarios y Para Acueductos
               </li>
               <li className="footerListItem">
-              Fabricación e instalación de estructuras metálicas.
+                Fabricación e Instalación de Estructuras Metálicas.
               </li>
               <li className="footerListItem">
                 Fabricación, instalación y montajes industriales de puentes carreteros y peatonales
