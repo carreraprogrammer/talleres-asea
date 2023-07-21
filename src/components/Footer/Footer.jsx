@@ -38,16 +38,22 @@ const Footer = () => {
             </h1>
             <ul className="footerList">
               <li className="footerListItem">
-                Servicio 1
+                Fabricación de maquinaria para la construcción 
               </li>
               <li className="footerListItem">
-                Servicio 2
+                Fabricación de maquinaria agrícola
               </li>
               <li className="footerListItem">
-                Servicio 3
+                Fabricación de compuertas
               </li>
               <li className="footerListItem">
-                Servicio 4
+                Fabricación de implementos sanitarios y para acueductos
+              </li>
+              <li className="footerListItem">
+              Fabricación e instalación de estructuras metálicas.
+              </li>
+              <li className="footerListItem">
+                Fabricación, instalación y montajes industriales de puentes carreteros y peatonales
               </li>
             </ul>
           </div>
@@ -57,25 +63,25 @@ const Footer = () => {
             </h1>
             <ul className="footerList">
               <li className="footerListItem">
-                Producto 1
+                Mezcladoras
               </li>
               <li className="footerListItem">
-                Producto 2
+                Plumas Grúas
               </li>
               <li className="footerListItem">
-                Producto 3
+                Cortadoras De Concreto
               </li>
               <li className="footerListItem">
-                Producto 4
+                Reglas Vibratorias,
               </li>
               <li className="footerListItem">
-                Producto 5
+                Maquinaria Agrícola
               </li>
               <li className="footerListItem">
-                Producto 6
+                Compuertas
               </li>
               <li className="footerListItem">
-                Producto 7
+                Implementos Sanitarios y Para Acueductos
               </li>
             </ul>
           </div>
