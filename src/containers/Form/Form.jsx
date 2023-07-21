@@ -42,8 +42,7 @@ Form.propTypes = {
       type: PropTypes.oneOf(['text', 'tel', 'email', 'textarea']).isRequired,
     })
   ).isRequired,
-  submitButtonText: PropTypes.string.isRequired,
-  onSubmit: PropTypes.func.isRequired,
+  submitButtonText: PropTypes.string.isRequired
 };
 
 Form.defaultProps = {
