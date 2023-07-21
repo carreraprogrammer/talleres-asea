@@ -162,6 +162,10 @@
     text-align: left !important;
   }
 
+  .footerCopyWrite > hr {
+    margin-top: 40px;
+  }
+
   .footerSocialContainerPc {
     width: 50%;
     display: flex;
