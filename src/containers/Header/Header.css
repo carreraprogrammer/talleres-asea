@@ -28,7 +28,7 @@
 }
 
 .galleryVideo:hover {
-  filter: brightness(0.3)
+  filter: brightness(0.3);
 }
 
 .titlesContainer {
@@ -36,8 +36,7 @@
 }
 
 .mainTitle {
-  color: #C1844D;
-  font-family: Space Grotesk;
+  color: #c1844d;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -83,7 +82,7 @@
 
   .headerContainer:hover {
     filter: sepia(60%);
-    border: 4px solid #C1844D;
+    border: 4px solid #c1844d;
   }
 
   .mainTitle {
@@ -103,15 +102,13 @@
     margin-bottom: 5%;
   }
 
-
-.galleryVideo {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 999;
-  filter: brightness(0.8);
-  cursor: pointer;
-  transition: 0.5s all ease-in-out;
-}
-
+  .galleryVideo {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    filter: brightness(0.8);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+  }
 }

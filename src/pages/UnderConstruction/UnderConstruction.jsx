@@ -1,13 +1,11 @@
-import React from 'react'
-import construction from '../../assets/under_construction.mp4'
-import './UnderConstruction.css'
+import React from 'react';
+import construction from '../../assets/under_construction.mp4';
+import './UnderConstruction.css';
 
-const UnderConstruction = () => {
-  return (
-    <div className="underConstructionContainer">
-        <video className="underConstructionVideo" src={construction} autoPlay loop muted />
-    </div>
-  )
-}
+const UnderConstruction = () => (
+  <div className="underConstructionContainer">
+    <video className="underConstructionVideo" src={construction} autoPlay loop muted />
+  </div>
+);
 
-export default UnderConstruction
+export default UnderConstruction;

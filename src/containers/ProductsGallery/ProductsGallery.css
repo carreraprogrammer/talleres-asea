@@ -1,0 +1,19 @@
+.productsGalleryContainer {
+  border: 1px solid black;
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+
+.productContainer {
+  height: 40vh;
+  margin-top: 24px;
+}
+
+.productGalleryImageContainer {
+  width: 50%;
+}
+
+.productGalleryTextContainer {
+  width: 50%;
+}

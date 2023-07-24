@@ -9,8 +9,7 @@
 }
 
 .aboutAbstractTitle {
-  color: #C1844D;
-  font-family: 'Space Grotesk';
+  color: #c1844d;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -20,7 +19,6 @@
 
 .aboutAbstractSubtitle {
   color: #293037;
-  font-family: 'Space Grotesk';
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -29,8 +27,7 @@
 }
 
 .aboutAbstractParagraph {
-  color: #B4B4B4;
-  font-family: 'Space Grotesk', sans-serif;
+  color: #b4b4b4;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -44,7 +41,6 @@
     width: 70%;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 24px;
     margin: 5% 15%;
   }
 

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const Card = () => {
-  return (
-    <div>Card</div>
-  )
-}
+const Card = () => (
+  <div>Card</div>
+);
 
-export default Card
+export default Card;

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const WpButton = () => {
-  return (
-    <div>WpButton</div>
-  )
-}
+const WpButton = () => (
+  <div>WpButton</div>
+);
 
-export default WpButton
+export default WpButton;

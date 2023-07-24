@@ -40,8 +40,20 @@ const ScrollToTop = () => {
     };
   }, [lastScrollY]);
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      scrollToTop();
+    }
+  };
+
   return (
-    <div className={`scroll-to-top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
+    <div
+      className={`scroll-to-top ${isVisible ? 'visible' : ''}`}
+      onClick={scrollToTop}
+      onKeyPress={handleKeyPress} // Agrega el event listener para tecla Enter
+      role="button" // Agrega el atributo role
+      tabIndex={0} // Agrega el atributo tabIndex para hacerlo focusable
+    >
       <FaArrowCircleUp />
     </div>
   );

@@ -38,15 +38,13 @@
 .footerSocialIcons {
   height: 24px;
   width: 24px;
-  margin: 0px 12px;
+  margin: 0 12px;
 }
 
 .footerTitle {
   color: #293037;
-  font-family: 'Space Grotesk';
   font-size: 12px;
   font-style: normal;
-  font-weight: 500;
   line-height: 14px;
   width: 45%;
   margin-left: 24px;
@@ -55,7 +53,6 @@
 
 .footerParagraph {
   color: #293037;
-  font-family: 'Space Grotesk';
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -70,9 +67,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 11px;
-  margin: 20px 0px;
+  margin: 20px 0;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .footerCopyWrite > hr {
@@ -89,7 +86,6 @@
 
   .footer {
     display: flex;
-    width: 100%;
     height: 20%;
     justify-content: space-around;
     margin-top: 100px;
@@ -126,7 +122,6 @@
   .footerAboutContainer,
   .footerProductsContainer {
     flex-direction: column;
-    margin: 0;
     width: 20%;
     height: 100%;
     justify-content: flex-start;

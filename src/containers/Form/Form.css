@@ -1,5 +1,5 @@
 .formContainer {
-  width: 95%; 
+  width: 95%;
   height: auto;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -15,7 +15,7 @@
 }
 
 .formTitle {
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -24,7 +24,7 @@
 }
 
 .formSubtitle {
-  color: #C1844D;
+  color: #c1844d;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -50,8 +50,8 @@
 
 .formInput {
   border-radius: 8px;
-  border: 1px solid #FFF;
-  background: rgba(255, 255, 255, 0.30);
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
   width: 100%;
   height: 42px;
@@ -63,12 +63,12 @@
 .formInput::placeholder {
   display: flex;
   text-align: center;
-  color: #B4B4B4;
+  color: #b4b4b4;
   font-size: 12px;
 }
 
 .formInput:focus {
-  outline: 2px solid #C1844D;
+  outline: 2px solid #c1844d;
 }
 
 .formTextArea {
@@ -76,8 +76,8 @@
   height: 113px;
   text-align: center;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.30);
-  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
   border-radius: 8px;
   margin: 8px 0;
 }
@@ -87,7 +87,7 @@
   height: 90px;
   padding-top: 40px;
   box-sizing: border-box;
-  color: #B4B4B4;
+  color: #b4b4b4;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -95,21 +95,21 @@
 }
 
 .formTextArea:focus {
-  outline: 2px solid #C1844D;
+  outline: 2px solid #c1844d;
 }
 
 @media (min-width: 1040px) {
   .formContainer {
-    width: 80%; 
+    width: 80%;
     margin-left: 10%;
     border-radius: 50px;
     background-image: url('../../assets/form_background_pc.png');
     background-size: cover;
     transition: 0.5s all ease-in-out;
   }
-  
+
   .formContainer:hover {
-    border: 2px solid #C1844D;
+    border: 2px solid #c1844d;
   }
 
   .formTitle {
@@ -129,7 +129,7 @@
     font-size: 20px;
     color: #fff;
   }
-  
+
   .formInput::placeholder {
     font-size: 20px;
     color: #fff;
@@ -143,20 +143,15 @@
     color: #fff;
   }
 
-  .formSubmitButton:hover {
-    transform: scale(1.1);
-    border: 2px solid #C1844D;
-    color: #C1844D;
-    background-color: #fff;
-  }
-
   .formTextArea::placeholder {
     font-size: 20px;
+    height: 150px;
+    padding-top: 70px;
   }
 
   .formSubmitButton {
     border-radius: 16px;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
     backdrop-filter: blur(5px);
     width: 20%;
     height: 56px;
@@ -166,9 +161,10 @@
     transition: 0.5s all ease-in-out;
   }
 
-  .formTextArea::placeholder {
-    height: 150px;
-    padding-top: 70px;
-  }  
-
+  .formSubmitButton:hover {
+    transform: scale(1.1);
+    border: 2px solid #c1844d;
+    color: #c1844d;
+    background-color: #fff;
+  }
 }

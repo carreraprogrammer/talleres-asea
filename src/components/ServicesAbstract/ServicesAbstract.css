@@ -1,93 +1,90 @@
 .servicesAbstractContainer {
+  height: auto;
+  width: 88%;
+  margin-left: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.servicesAbstractTitle {
+  color: #c1844d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.checkIcon {
+  color: #c1844d;
+  width: 10%;
+  font-size: 2rem;
+  display: flex;
+  height: 20px;
+}
+
+.servicesAbstractSubtitle {
+  color: #293037;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 16px;
+}
+
+.servicesAbstractListItem {
+  color: #b4b4b4;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+}
+
+.servicesAbstractListItem > p {
+  width: 90%;
+}
+
+@media (min-width: 1040px) {
+  .servicesAbstractContainer {
     height: auto;
-    width: 88%;
-    margin-left: 6%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 24px;
+    width: 70%;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 5% 15%;
   }
-  
+
+  .servicesAbstractTitleContainer {
+    width: 45%;
+    margin-right: 5%;
+  }
+
+  .servicesAbstractListContainer {
+    width: 45%;
+    margin-left: 5%;
+  }
+
   .servicesAbstractTitle {
-    color: #C1844D;
-    font-family: 'Space Grotesk';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration-line: underline;
+    font-size: 18px;
   }
 
-  .checkIcon {
-    color: #C1844D;
-    width: 10%;
-    font-size: 2rem;
-    display: flex;
-    height: 20px;
-  }
-  
   .servicesAbstractSubtitle {
-    color: #293037;
-    font-family: 'Space Grotesk';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 16px;
+    font-size: 32px;
   }
-  
-  .servicesAbstractListItem {
-    color: #B4B4B4;
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 16px;
-    width: 100%;
-    display: flex;
-  }
-
-  .servicesAbstractListItem > p {
-    width: 90%;
-  }
-  
-  @media (min-width: 1040px) {
- .servicesAbstractContainer {
-      height: auto;
-      width: 70%;
-      flex-direction: row;
-      justify-content: flex-start;
-      margin-bottom: 24px;
-      margin: 5% 15%;
-    }
-  
- .servicesAbstractTitleContainer {
-      width: 45%;
-      margin-right: 5%;
-    }
-  
- .servicesAbstractListContainer {
-      width: 45%;
-      margin-left: 5%;
-    }
-  
- .servicesAbstractTitle {
-      font-size: 18px;
-    }
-  
- .servicesAbstractSubtitle {
-      font-size: 32px;
-    }
 
   .checkIcon {
     height: 30px;
   }
-  
- .servicesAbstractListItem {
-      font-size: 20px;
-      margin-top: 2rem;
-      display: flex;
-      justify-content: space-between;
-    }
+
+  .servicesAbstractListItem {
+    font-size: 20px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
   }
+}

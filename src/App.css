@@ -1,40 +1,43 @@
 @font-face {
   font-family: 'Space Grotesk';
-  src: url('assets/fonts/spacegrotesk/SpaceGrotesk-Bold.otf') format('opentype'),
-       url('assets/fonts/spacegrotesk/SpaceGrotesk-Regular.otf') format('opentype'),
-       url('assets/fonts/spacegrotesk/SpaceGrotesk-Medium.otf') format('opentype'),
-       url('assets/fonts/spacegrotesk/SpaceGrotesk-Light.otf') format('opentype');
+  src:
+    url('assets/fonts/spacegrotesk/SpaceGrotesk-Bold.otf') format('opentype'),
+    url('assets/fonts/spacegrotesk/SpaceGrotesk-Regular.otf') format('opentype'),
+    url('assets/fonts/spacegrotesk/SpaceGrotesk-Medium.otf') format('opentype'),
+    url('assets/fonts/spacegrotesk/SpaceGrotesk-Light.otf') format('opentype');
 }
 
-
 * {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Space Grotesk', sans-serif;
-    color: #333;
-    background-image: url('assets/general_background.png');
-    background-size: repeat;
-  }
-  
-  a {
-    text-decoration: none;
-  }
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-  ul {
-    list-style: none;
-  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 
-  .currentPage {
-    color: #C1844D !important;
-  }
-  
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #333;
+  background-image: url('assets/general_background.png');
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.currentPage {
+  color: #c1844d !important;
+}

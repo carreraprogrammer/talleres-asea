@@ -5,7 +5,6 @@
   margin-left: 1%;
   background-size: cover;
   background-position: center;
-  transition: 2s all ease-in-out;
   cursor: pointer;
   position: relative;
   transition: 0.5s all ease-in-out;
@@ -34,11 +33,12 @@
 
 .arrowLeftContainer {
   left: 5%;
-  z-index: 1000;
+  z-index: 1001;
 }
 
 .arrowRightContainer {
   right: 5%;
+  z-index: 1000;
 }
 
 .projectInfo {
@@ -57,9 +57,8 @@
 }
 
 .projectTitle {
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  text-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.44);
   font-family: 'Space Grotesk', sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -68,28 +67,21 @@
 }
 
 .projectSubtitle {
-  color: #C1844D;
-}
-
-.projectDescription{
-  color: #FFF;
-  font-family: 'Space Grotesk', sans-serif;
+  color: #c1844d;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  margin-bottom: 8px;
 }
 
 .projectDescription {
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 9px;
   font-weight: 300;
   line-height: 12px;
   width: 90%;
   margin-top: 16px;
-}
-
-.projectSubtitle {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: light;
-  text-decoration-line: underline;
-  margin-bottom: 8px;
 }
 
 @media (min-width: 1040px) {
@@ -105,12 +97,6 @@
   .galleryContainer:hover {
     background-color: black;
     filter: brightness(0.8);
-  }
-
-  .galleryContainer:hover > .projectInfo {
-    border: 2px solid #C1844D;
-    filter: brightness(1.2);
-    background-color: rgba(0, 0, 0, 0.719);
   }
 
   .arrowLeftContainer,
@@ -151,6 +137,12 @@
     padding-left: 10px;
     height: auto;
     width: 40%;
+  }
+
+  .galleryContainer:hover > .projectInfo {
+    border: 2px solid #c1844d;
+    filter: brightness(1.2);
+    background-color: rgba(0, 0, 0, 0.719);
   }
 
   .projectTitle {
